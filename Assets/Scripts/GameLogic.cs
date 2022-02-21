@@ -8,14 +8,14 @@ public class GameLogic : MonoBehaviour
     public GameObject Pins;
     void Start()
     {
-        GameObject ball = Instantiate(Ball, new Vector3(-0.48f, 0.169f, -1.11f), Quaternion.identity);
+        GameObject ball = Instantiate(Ball, new Vector3(0.718f, 0.529f, -3.87f), Quaternion.identity);
     }
 
     private void Update()
     {
         if(PinDetector.instance.oneDown==true)
         {
-            CapsuleCollider.instance.bowled = false;
+         //   CapsuleCollider.instance.bowled = false;
             StartCoroutine(Instantiation());
         }
     }
@@ -23,7 +23,7 @@ public class GameLogic : MonoBehaviour
     IEnumerator Instantiation()
     {
         yield return new WaitForSeconds(7f);
-        GameObject ball = Instantiate(Ball, new Vector3(-0.48f, 0.169f, -1.11f), Quaternion.identity);
+        GameObject ball = Instantiate(Ball, new Vector3(0.718f, 0.529f, -3.87f), Quaternion.identity);
         GameObject pins = Instantiate(Pins, new Vector3(0, 0, 0), Quaternion.identity);
         
     }

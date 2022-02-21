@@ -19,7 +19,7 @@ public class PinDetector : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject ball = Instantiate(Ball, new Vector3(-0.48f, 0.169f, -1.11f), Quaternion.identity);
+        GameObject ball = Instantiate(Ball, new Vector3(0.718f, 0.529f, -3.87f), Quaternion.identity);
         score = GameObject.Find("Score").GetComponent<TextMeshProUGUI>();
         scoring = 0;
         score.text = scoring.ToString();
@@ -45,7 +45,7 @@ public class PinDetector : MonoBehaviour
     IEnumerator Instantiation()
     {
         yield return new WaitForSeconds(7f);
-        GameObject ball = Instantiate(Ball, new Vector3(-0.48f, 0.169f, -1.11f), Quaternion.identity);
+        GameObject ball = Instantiate(Ball, new Vector3(0.718f, 0.529f, -3.87f), Quaternion.identity);
         GameObject pins = Instantiate(Pins, new Vector3(0, 0, 0), Quaternion.identity);
         scoring = 0;
         score.text = 0.ToString();
