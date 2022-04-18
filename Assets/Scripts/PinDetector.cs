@@ -35,6 +35,8 @@ public class PinDetector : MonoBehaviour
             if(oneDown==false)  
             {
                 oneDown = true;
+                HapticController.instance.SendHaptic();
+                Debug.Log("Pinned");
                 Destroy(GameObject.FindGameObjectWithTag("Player"),3);
                 Destroy(other.gameObject.transform.parent.gameObject,5);
                 StartCoroutine(Instantiation());

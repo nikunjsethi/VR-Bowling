@@ -26,6 +26,7 @@ public class SphereCollider : MonoBehaviour
             {
                 bowled = true;
                 count++;
+                
             }
             scoring++;
             Destroy(gameObject, 3f);

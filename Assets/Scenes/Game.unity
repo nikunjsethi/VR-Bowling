@@ -624,6 +624,7 @@ GameObject:
   - component: {fileID: 672849542}
   - component: {fileID: 672849541}
   - component: {fileID: 672849540}
+  - component: {fileID: 672849544}
   m_Layer: 0
   m_Name: BallHolder
   m_TagString: Untagged
@@ -709,6 +710,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &672849544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672849539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c4740c9a0af8446b4889d330ce45ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftController: {fileID: 6595237194004469564}
+  rightController: {fileID: 6595237194004469562}
+  amplitude: 0.5
+  duration: 5
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2534,8 +2551,8 @@ MonoBehaviour:
   m_PlayAudioClipOnHoverCanceled: 0
   m_AudioClipForOnHoverCanceled: {fileID: 0}
   m_PlayHapticsOnSelectEntered: 0
-  m_HapticSelectEnterIntensity: 0
-  m_HapticSelectEnterDuration: 0
+  m_HapticSelectEnterIntensity: 0.5
+  m_HapticSelectEnterDuration: 1
   m_PlayHapticsOnSelectExited: 0
   m_HapticSelectExitIntensity: 0
   m_HapticSelectExitDuration: 0
@@ -2543,8 +2560,8 @@ MonoBehaviour:
   m_HapticSelectCancelIntensity: 0
   m_HapticSelectCancelDuration: 0
   m_PlayHapticsOnHoverEntered: 0
-  m_HapticHoverEnterIntensity: 0
-  m_HapticHoverEnterDuration: 0
+  m_HapticHoverEnterIntensity: 1
+  m_HapticHoverEnterDuration: 2
   m_PlayHapticsOnHoverExited: 0
   m_HapticHoverExitIntensity: 0
   m_HapticHoverExitDuration: 0
@@ -2655,6 +2672,28 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.05
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6595237194004469562 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6595237192334927478, guid: 37923e547ececac469deb26f5b129425, type: 3}
+  m_PrefabInstance: {fileID: 6595237194004469552}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6595237194004469553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caff514de9b15ad48ab85dcff5508221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6595237194004469564 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6595237193681505321, guid: 37923e547ececac469deb26f5b129425, type: 3}
+  m_PrefabInstance: {fileID: 6595237194004469552}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6595237194004469554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caff514de9b15ad48ab85dcff5508221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &6788408899874777430
 MeshRenderer:
   m_ObjectHideFlags: 0
